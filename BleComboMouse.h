@@ -7,7 +7,7 @@
 #define MOUSE_MIDDLE 4
 #define MOUSE_BACK 8
 #define MOUSE_FORWARD 16
-#define MOUSE_ALL (MOUSE_LEFT | MOUSE_RIGHT | MOUSE_MIDDLE) # For compatibility with the Mouse library
+#define MOUSE_ALL (MOUSE_LEFT | MOUSE_RIGHT | MOUSE_MIDDLE) // For compatibility with the Mouse library
 
 class BleComboMouse {
 private:
@@ -15,7 +15,7 @@ private:
   uint8_t _buttons;
   void buttons(uint8_t b);
 public:
-  BleComboMouse(BleComboKeyboard* keyboard) { _keyboard = keyboard; };
+  BleComboMouse(BleComboKeyboard* keyboard) : _keyboard(keyboard), _buttons(0) {};
   void begin(void) {};
   void end(void) {};
   void click(uint8_t b = MOUSE_LEFT);
