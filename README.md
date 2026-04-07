@@ -8,20 +8,21 @@ This project is forked from [blackketter/ESP32-BLE-Combo](https://github.com/bla
 
 ## Todo
 
- - [ ] Read Numlock/Capslock/Scrolllock state
- - [ ] Add gamepad support
- - [x] Auto-instantiate Keyboard, Mouse objects (like the standard Arduino libraries)
- - [ ] Optimize so that only needed classes get created for BLE.
+- [ ] Read Numlock/Capslock/Scrolllock state
+- [ ] Add gamepad support
+- [x] Auto-instantiate Keyboard, Mouse objects (like the standard Arduino libraries)
+- [ ] Optimize so that only needed classes get created for BLE.
 
 ## Installation
+
 - (Make sure you can use the ESP32 with the Arduino IDE. [Instructions can be found here.](https://github.com/espressif/arduino-esp32#installation-instructions))
-- [Download the latest release of this library from the release page.](https://github.com/T-vK/ESP32-BLE-Keyboard/releases)
+- [Download the latest release of this library from the release page.](https://github.com/uuhc/ESP32-BLE-Combo/releases)
 - In the Arduino IDE go to "Sketch" -> "Include Library" -> "Add .ZIP Library..." and select the file you just downloaded.
 - You can now go to "File" -> "Examples" -> "ESP32 BLE Combo" and select any of the examples to get started.
 
 ## Example
 
-```
+```cpp
 #include <BleCombo.h>
 
 void setup() {
@@ -64,6 +65,7 @@ void loop() {
 }
 
 ```
+
 ## Credits
 
 This is fork of @T-kV's excellent [ESP32-BLE-Mouse](https://github.com/T-vK/ESP32-BLE-Mouse)
@@ -74,4 +76,3 @@ You might also be interested in:
 - [ESP32-BLE-Mouse](https://github.com/T-vK/ESP32-BLE-Mouse)
 - [ESP32-BLE-Keyboard](https://github.com/T-vK/ESP32-BLE-Keyboard)
 - [ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad)
-
